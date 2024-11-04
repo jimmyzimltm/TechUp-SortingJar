@@ -1,0 +1,85 @@
+
+h1 {
+
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    border: 10px black solid;
+    margin-bottom: 10px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+
+/* can tag the same style multiple times - they stack, and the second overwrites the first*/
+
+.title {
+    background-color: lightgray;
+    color: blue;
+}
+
+.modulechosen {
+
+  color: black;
+  background-color: wheat;
+  text-align: left;
+  border: 1px black solid;
+  margin-bottom: 10px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+/* can tag multiple id to have same style*/
+
+#datestamp, #hello {
+    color: green;
+}
+
+
+/* Programming wise, try to re-use class, but not ID, because ID overwrites class*/
+
+/*this is to try animation*/
+/* Note Ctrl/ to quickly comment */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  } */
+
+
+  /* This is animation movement */
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s; 
+    /* this determines speed */
+  }
